@@ -1,22 +1,14 @@
-import { View } from "react-native";
-import { StyleSheet } from 'react-native-unistyles';
-import Button1 from '../components/Button1';
-import Button2 from '../components/Button2';
+import { ScopedTheme, StyleSheet } from 'react-native-unistyles';
+import { TestText } from '../components/MyText';
 
 export default function Index() {
   return (
-    <View style={stylesheet.container}>
-      <Button1 />
-      <Button2 />
-    </View>
+    <ScopedTheme name="dark">
+      <TestText style={styles.x}>hi</TestText>
+    </ScopedTheme>
   );
 }
 
-
-const stylesheet = StyleSheet.create((theme, rt) => ({
-  container: {
-    backgroundColor: 'grey',
-    flex: 1,
-    paddingTop: rt.insets.top,
-  },
+const styles = StyleSheet.create((theme, rt) => ({
+  x: {},
 }));
