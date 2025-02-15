@@ -1,11 +1,11 @@
 import { StyleSheet } from 'react-native-unistyles';
 const themes = {
   light: {
-    background: 'white',
+    background: 'yellow',
     text: 'black',
   },
   dark: {
-    background: 'black',
+    background: 'brown',
     text: 'white',
   },
 };

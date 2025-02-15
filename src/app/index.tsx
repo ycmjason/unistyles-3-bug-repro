@@ -1,26 +1,22 @@
-import { Text, View } from 'react-native';
+import { Pressable, Text } from 'react-native';
+import { useSharedValue } from 'react-native-reanimated';
 import { ScopedTheme, StyleSheet } from 'react-native-unistyles';
 
 export default function Index() {
+  // not used
+  useSharedValue(0);
   return (
     <ScopedTheme name="dark">
-      <View style={[styles.x, { justifyContent: 'center' }]}>
-        <Text style={[styles.y, { textAlign: 'center' }]}>hi</Text>
-        <Text style={[styles.y]}>hi</Text>
-      </View>
-      <View style={[styles.x]}>
-        <Text style={[styles.y, { textAlign: 'center' }]}>hi</Text>
-        <Text style={[styles.y]}>hi</Text>
-      </View>
+      <Pressable style={state => [styles.x(state)]}>
+        <Text>hi</Text>
+      </Pressable>
     </ScopedTheme>
   );
 }
 
 const styles = StyleSheet.create((theme, rt) => ({
-  x: {
+  x: ({ pressed }: { pressed: boolean }) => ({
     backgroundColor: theme.background,
-  },
-  y: {
-    color: theme.text,
-  },
+    opacity: pressed ? 0.7 : 1,
+  }),
 }));
