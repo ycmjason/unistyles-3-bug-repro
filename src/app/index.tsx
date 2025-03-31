@@ -1,11 +1,10 @@
-import { Image, View } from 'react-native';
-import { StyleSheet } from 'react-native-unistyles';
+import { Image, StyleSheet, View } from 'react-native';
 
 export default function Index() {
   return (
     <View>
       <Image source={require('../assets/rick.png')} />
-      <Image width={5} height={5} source={require('../assets/rick.png')} />
+      <Image width={30} height={30} source={require('../assets/rick.png')} />
       <Image style={styles.img} source={require('../assets/rick.png')} />
     </View>
   );
@@ -13,7 +12,7 @@ export default function Index() {
 
 const styles = StyleSheet.create({
   img: {
-    width: 20,
-    height: 20,
+    width: 80,
+    height: 80,
   },
 });
