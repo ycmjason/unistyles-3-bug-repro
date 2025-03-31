@@ -7942,7 +7942,7 @@ __metadata:
     react-native-reanimated: "npm:~3.16.1"
     react-native-safe-area-context: "npm:4.12.0"
     react-native-screens: "npm:~4.4.0"
-    react-native-unistyles: "npm:2.31.0"
+    react-native-unistyles: "npm:^3.0.0-nightly-20250329"
     react-native-web: "npm:~0.19.13"
     react-native-webview: "npm:13.12.5"
     react-test-renderer: "npm:19.1.0"
@@ -8315,24 +8315,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-unistyles@npm:2.31.0":
-  version: 2.31.0
-  resolution: "react-native-unistyles@npm:2.31.0"
+"react-native-unistyles@npm:^3.0.0-nightly-20250329":
+  version: 3.0.0-nightly-20250329
+  resolution: "react-native-unistyles@npm:3.0.0-nightly-20250329"
   peerDependencies:
     "@react-native/normalize-colors": "*"
     react: "*"
-    react-native: "*"
-    react-native-macos: "*"
-    react-native-web: "*"
-    react-native-windows: "*"
-  peerDependenciesMeta:
-    react-native-macos:
-      optional: true
-    react-native-web:
-      optional: true
-    react-native-windows:
-      optional: true
-  checksum: 10c0/bb8cc419d654e79674675a1f8150d4cbd869cd31bf89be3f3aa59d15aa95e061baf8a3dfa765c73b36e6190f88155e2864065dedfd7923d9e5a4ae7a772a6e56
+    react-native: ">=0.76.0"
+    react-native-edge-to-edge: "*"
+    react-native-nitro-modules: "*"
+  checksum: 10c0/5d60d762e22289932006bcf76692a5d170a2a101e190bc8bcfc9150cbd55617c638582bc8dded941063840961e1e389ba5ad483bd17c23de4610ad1523e1769e
   languageName: node
   linkType: hard
 
